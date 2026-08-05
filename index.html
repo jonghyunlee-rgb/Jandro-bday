@@ -5,36 +5,34 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Jandro Birthday World</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ff5ea8,#ffb347,#8a5cff);color:#fff;text-align:center;overflow-x:hidden}
-h1{font-size:3rem;margin:20px;text-shadow:0 0 15px #000}
+body{margin:0;font-family:Arial,sans-serif;background:#ff69b4;color:#fff;text-align:center;overflow-x:hidden}
+h1{font-size:3rem;margin:20px}
 .header{width:220px;border-radius:50%;border:6px solid #fff;box-shadow:0 0 25px #fff}
-.card{width:min(1100px,92%);margin:35px auto;padding:20px;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border-radius:20px}
+.card{width:min(1100px,92%);margin:35px auto;padding:20px;background:rgba(255,255,255,.15);border-radius:20px}
 .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;align-items:flex-start}
 iframe{width:560px;max-width:100%;height:315px;border:none;border-radius:16px}
-.side{display:flex;flex-direction:column;align-items:center;justify-content:center}
-button{padding:14px 28px;border:none;border-radius:30px;background:#ff0066;color:#fff;font-size:18px;cursor:pointer}
-button:hover{transform:scale(1.05)}
+.side{display:flex;flex-direction:column;align-items:center}
+button{padding:14px 28px;border:none;border-radius:30px;background:#d81b60;color:#fff;font-size:18px;cursor:pointer}
 .hidden{display:none;margin-top:18px}
 .hidden img{max-width:280px;border-radius:18px;box-shadow:0 0 25px #fff;animation:pop .7s}
 @keyframes pop{0%{transform:scale(.2);opacity:0}100%{transform:scale(1);opacity:1}}
 .particle{position:fixed;top:-20px;width:10px;height:10px;border-radius:50%;pointer-events:none;animation:fall linear forwards}
 @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
-footer{padding:50px;font-size:1.3rem}
+footer{padding:40px;font-size:1.2rem}
 </style>
 </head>
 <body>
-<h1>🎂 Jandro Birthday World 🎂</h1>
-<img class="header" src="images/header.jpg" alt="Jandro">
+<h1>Jandro Birthday World</h1>
+<img class="header" src="images/header.jpg" alt="Header">
 
 <section class="card">
 <h2>Person 1</h2>
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/nCkpzqqog4k" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img1',1)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img1',1)">Reveal Surprise</button>
 <div id="img1" class="hidden">
 <img src="images/person1.png" alt="Person 1">
-<p>Confetti</p>
 </div>
 </div>
 </div>
@@ -45,10 +43,9 @@ footer{padding:50px;font-size:1.3rem}
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/J_ub7Etch2U" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img2',2)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img2',2)">Reveal Surprise</button>
 <div id="img2" class="hidden">
 <img src="images/person2.png" alt="Person 2">
-<p>Balloons</p>
 </div>
 </div>
 </div>
@@ -59,10 +56,9 @@ footer{padding:50px;font-size:1.3rem}
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/pB-5XG-DbAA" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img3',3)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img3',3)">Reveal Surprise</button>
 <div id="img3" class="hidden">
 <img src="images/person3.png" alt="Person 3">
-<p>Fireworks</p>
 </div>
 </div>
 </div>
@@ -73,10 +69,9 @@ footer{padding:50px;font-size:1.3rem}
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/HaMq2nn5ac0" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img4',4)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img4',4)">Reveal Surprise</button>
 <div id="img4" class="hidden">
 <img src="images/person4.png" alt="Person 4">
-<p>Hearts</p>
 </div>
 </div>
 </div>
@@ -87,10 +82,9 @@ footer{padding:50px;font-size:1.3rem}
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/vk_xq1P7vIU" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img5',5)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img5',5)">Reveal Surprise</button>
 <div id="img5" class="hidden">
 <img src="images/person5.png" alt="Person 5">
-<p>Sparkles</p>
 </div>
 </div>
 </div>
@@ -101,10 +95,9 @@ footer{padding:50px;font-size:1.3rem}
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/av5JD1dfj_c" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img6',6)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img6',6)">Reveal Surprise</button>
 <div id="img6" class="hidden">
 <img src="images/person6.png" alt="Person 6">
-<p>Gift</p>
 </div>
 </div>
 </div>
@@ -115,10 +108,9 @@ footer{padding:50px;font-size:1.3rem}
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/8RvAKRoIDqU" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img7',7)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img7',7)">Reveal Surprise</button>
 <div id="img7" class="hidden">
 <img src="images/person7.png" alt="Person 7">
-<p>Rainbow</p>
 </div>
 </div>
 </div>
@@ -129,31 +121,30 @@ footer{padding:50px;font-size:1.3rem}
 <div class="wrap">
 <iframe src="https://www.youtube.com/embed/7AXo-bYGXI4" allowfullscreen></iframe>
 <div class="side">
-<button onclick="reveal('img8',8)">🎁 Reveal Surprise</button>
+<button onclick="reveal('img8',8)">Reveal Surprise</button>
 <div id="img8" class="hidden">
 <img src="images/person8.png" alt="Person 8">
-<p>Grand Finale</p>
 </div>
 </div>
 </div>
 </section>
 
-<footer>Happy Birthday Jandro! 🎉</footer>
+<footer>Happy Birthday Jandro</footer>
 <script>
 function reveal(id,n){
  document.getElementById(id).style.display='block';
- const colors=['#ff0','#0ff','#f0f','#0f0','#f55','#5ff','#fff','#fa0'];
- let count=80+n*10;
- for(let i=0;i<count;i++){ 
-   let d=document.createElement('div');
-   d.className='particle';
-   d.style.left=Math.random()*100+'vw';
-   d.style.background=colors[(i+n)%colors.length];
-   d.style.width=(6+Math.random()*12)+'px';
-   d.style.height=d.style.width;
-   d.style.animationDuration=(2+Math.random()*3)+'s';
-   document.body.appendChild(d);
-   setTimeout(()=>d.remove(),5000);
+ const colors=['#fff','#ffe066','#ff8fab','#caffbf','#a0c4ff'];
+ for(let i=0;i<80+n*10;i++){
+  const d=document.createElement('div');
+  d.className='particle';
+  d.style.left=Math.random()*100+'vw';
+  d.style.background=colors[Math.floor(Math.random()*colors.length)];
+  const s=6+Math.random()*10;
+  d.style.width=s+'px';
+  d.style.height=s+'px';
+  d.style.animationDuration=(2+Math.random()*3)+'s';
+  document.body.appendChild(d);
+  setTimeout(()=>d.remove(),5000);
  }
 }
 </script>
