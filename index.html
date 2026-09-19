@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,6 +57,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: 400px;
     }
 
     button {
@@ -78,16 +80,26 @@
       transform: scale(0.95);
     }
 
-    .hidden {
+    /* Hidden until Reveal is clicked */
+    .reveal-content {
       display: none;
-      margin-top: 18px;
+      margin-top: 20px;
+      animation: pop 0.7s;
     }
 
-    .hidden img {
-      max-width: 280px;
-      border-radius: 18px;
-      box-shadow: 0 0 25px #fff;
-      animation: pop 0.7s;
+    .person-name {
+      font-size: 2rem;
+      margin: 10px 0 15px;
+    }
+
+    .birthday-message {
+      max-width: 400px;
+      margin: 15px auto 0;
+      padding: 18px;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 15px;
     }
 
     @keyframes pop {
@@ -146,12 +158,12 @@
   </audio>
 
 
-  <!-- PERSON 1 -->
+  <!-- ================================= -->
+  <!-- PERSON 1 - CHANG -->
+  <!-- ================================= -->
+
   <section class="card">
 
-      <h2></h2>
-  <p class="birthday-message">
-  </p>
     <div class="wrap">
 
       <iframe
@@ -162,129 +174,196 @@
 
       <div class="side">
 
-        <button onclick="reveal('img1', 1)">
+        <button onclick="reveal('reveal1', 1)">
           🔊 Reveal Surprise
         </button>
 
-       <h2 class="person-name">Chang</h2>
- <p id="person4Message" class="birthday-message">     Happy birthday Jandro, you are a hard worker and you are organized, prepared and not all over the place! </p>
+        <div id="reveal1" class="reveal-content">
 
+          <h2 class="person-name">
+            Chang 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy birthday Jandro, you are a hard worker and you are
+            organized, prepared and not all over the place!
+          </p>
+
+        </div>
 
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- PERSON 2 -->
+  <!-- ================================= -->
+  <!-- PERSON 2 - NGHIA -->
+  <!-- ================================= -->
+
   <section class="card">
 
     <div class="wrap">
 
       <iframe
-        src="https://youtu.be/QZp2biJul1c?si=HWx2eaxQDwexOI3H&t=24"
+        src="https://www.youtube.com/embed/QZp2biJul1c?start=24"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
 
       <div class="side">
 
-        <button onclick="reveal('img2', 2)">
+        <button onclick="reveal('reveal2', 2)">
           🔊 Reveal Surprise
         </button>
-        
-<h2 class="person-name">Nghia</h2>
- <p id="person4Message" class="birthday-message"> Happy Birthday! Since you love spending all your money in Vegas, this is a reminder to stop gambling your emotion on men. May you bring better luck on the casino floor and even better luck with these men.  </p>
+
+        <div id="reveal2" class="reveal-content">
+
+          <h2 class="person-name">
+            Nghia 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy Birthday! Since you love spending all your money in
+            Vegas, this is a reminder to stop gambling your emotion on men.
+            May you bring better luck on the casino floor and even better
+            luck with these men.
+          </p>
+
+        </div>
 
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- PERSON 3 -->
+  <!-- ================================= -->
+  <!-- PERSON 3 - CHANG -->
+  <!-- ================================= -->
+
   <section class="card">
+
     <div class="wrap">
 
       <iframe
-        src="https://youtu.be/dQw4w9WgXcQ?si=jid340YlviqVt2I4&t=18"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?start=18"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
 
       <div class="side">
 
-        <button onclick="reveal('img3', 3)">
+        <button onclick="reveal('reveal3', 3)">
           🔊 Reveal Surprise
         </button>
 
-              <h2 class="person-name">Chang</h2>
- <p id="person4Message" class="birthday-message">     Happy birthday Jandro, you are a hard worker and you are organized, prepared and not all over the place! </p>
+        <div id="reveal3" class="reveal-content">
 
+          <h2 class="person-name">
+            Chang 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy birthday Jandro, you are a hard worker and you are
+            organized, prepared and not all over the place!
+          </p>
+
+        </div>
 
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- PERSON 4 -->
+  <!-- ================================= -->
+  <!-- PERSON 4 - MINH -->
+  <!-- ================================= -->
+
   <section class="card">
 
-  <p class="birthday-message">
-  </p>
-    
     <div class="wrap">
 
       <iframe
-        src="https://youtu.be/gHpEwCrBh1g?si=kdcI0fBunGjCD8aw&t=10"
+        src="https://www.youtube.com/embed/gHpEwCrBh1g?start=10"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
 
       <div class="side">
 
-        <button onclick="reveal('img4', 4)">
+        <button onclick="reveal('reveal4', 4)">
           🔊 Reveal Surprise
         </button>
 
-          <h2 class="person-name">Minh</h2>
- <p id="person4Message" class="birthday-message">Happy birthday Alejandro, hope you have the best birthday! </p>
+        <div id="reveal4" class="reveal-content">
 
+          <h2 class="person-name">
+            Minh 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy birthday Alejandro, hope you have the best birthday!
+          </p>
+
+        </div>
 
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- PERSON 5 -->
+  <!-- ================================= -->
+  <!-- PERSON 5 - EVA -->
+  <!-- ================================= -->
+
   <section class="card">
 
-
-    
     <div class="wrap">
 
       <iframe
-        src="https://youtu.be/niqrrmev4mA?si=dA4pigA6SUQNfE4Q&t=175"
+        src="https://www.youtube.com/embed/niqrrmev4mA?start=175"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
 
       <div class="side">
 
-        <button onclick="reveal('img5', 5)">
+        <button onclick="reveal('reveal5', 5)">
           🔊 Reveal Surprise
         </button>
 
-         <h2 class="person-name">Eva</h2>
- <p id="person4Message" class="birthday-message">Happy birthday Alejandro!!!!
- </p>
+        <div id="reveal5" class="reveal-content">
 
+          <h2 class="person-name">
+            Eva 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy birthday Alejandro!!!!
+          </p>
+
+        </div>
 
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- ================================= -->
   <!-- PERSON 6 -->
+  <!-- ================================= -->
+
   <section class="card">
+
     <div class="wrap">
 
       <iframe
@@ -295,24 +374,35 @@
 
       <div class="side">
 
-        <button onclick="reveal('img6', 6)">
+        <button onclick="reveal('reveal6', 6)">
           🔊 Reveal Surprise
         </button>
 
-        <div id="img6" class="hidden">
-          <img
-            src="images/person6.png"
-            alt="Person 6"
-          >
+        <div id="reveal6" class="reveal-content">
+
+          <h2 class="person-name">
+            Person 6 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy Birthday Jandro! 🎉
+          </p>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- ================================= -->
   <!-- PERSON 7 -->
+  <!-- ================================= -->
+
   <section class="card">
+
     <div class="wrap">
 
       <iframe
@@ -323,24 +413,35 @@
 
       <div class="side">
 
-        <button onclick="reveal('img7', 7)">
+        <button onclick="reveal('reveal7', 7)">
           🔊 Reveal Surprise
         </button>
 
-        <div id="img7" class="hidden">
-          <img
-            src="images/person7.png"
-            alt="Person 7"
-          >
+        <div id="reveal7" class="reveal-content">
+
+          <h2 class="person-name">
+            Person 7 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy Birthday Jandro! 🎉
+          </p>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- ================================= -->
   <!-- PERSON 8 -->
+  <!-- ================================= -->
+
   <section class="card">
+
     <div class="wrap">
 
       <iframe
@@ -351,19 +452,26 @@
 
       <div class="side">
 
-        <button onclick="reveal('img8', 8)">
+        <button onclick="reveal('reveal8', 8)">
           🔊 Reveal Surprise
         </button>
 
-        <div id="img8" class="hidden">
-          <img
-            src="images/person8.png"
-            alt="Person 8"
-          >
+        <div id="reveal8" class="reveal-content">
+
+          <h2 class="person-name">
+            Person 8 🎂
+          </h2>
+
+          <p class="birthday-message">
+            Happy Birthday Jandro! 🎉
+          </p>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
@@ -376,22 +484,21 @@
 
     function reveal(id, n) {
 
-      // --------------------------------
-      // Reveal the person's image
-      // --------------------------------
+      // ==============================
+      // REVEAL NAME + MESSAGE
+      // ==============================
 
-      const image = document.getElementById(id);
+      const content = document.getElementById(id);
 
-      image.style.display = 'block';
+      content.style.display = 'block';
 
 
-      // --------------------------------
-      // Play Airhorn Sound
-      // --------------------------------
+      // ==============================
+      // PLAY AIRHORN
+      // ==============================
 
       const sound = document.getElementById('revealSound');
 
-      // Restart sound from beginning
       sound.currentTime = 0;
 
       sound.play().catch(function(error) {
@@ -399,9 +506,9 @@
       });
 
 
-      // --------------------------------
-      // Birthday Confetti
-      // --------------------------------
+      // ==============================
+      // CONFETTI
+      // ==============================
 
       const colors = [
         '#ffffff',
@@ -419,7 +526,7 @@
         d.className = 'particle';
 
 
-        // Random horizontal position
+        // Random position
         d.style.left =
           Math.random() * 100 + 'vw';
 
@@ -434,13 +541,17 @@
 
 
         // Random size
-        const s = 6 + Math.random() * 10;
+        const s =
+          6 + Math.random() * 10;
 
-        d.style.width = s + 'px';
-        d.style.height = s + 'px';
+        d.style.width =
+          s + 'px';
+
+        d.style.height =
+          s + 'px';
 
 
-        // Random falling speed
+        // Random speed
         d.style.animationDuration =
           (2 + Math.random() * 3) + 's';
 
@@ -448,7 +559,7 @@
         document.body.appendChild(d);
 
 
-        // Remove particle after animation
+        // Remove particle
         setTimeout(function() {
           d.remove();
         }, 5000);
@@ -461,3 +572,4 @@
 
 </body>
 </html>
+
